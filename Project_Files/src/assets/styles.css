@@ -1,0 +1,143 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    padding: 1em;
+    font-weight: 600;
+}
+
+h2, h3 {
+    padding: 1em 0 .5em;
+}
+
+p {
+    padding-bottom: 1em;
+}
+
+.products-container {
+    width: 100%;
+    max-width: 85em;
+    padding: 2em;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-container {
+    width: 100%;
+    max-width: 25em;
+    padding: 2em;
+    background: #efefef;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products, .cart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products > div, .cart > div {
+    background: #f5f5f5;
+    margin: 1em;
+    padding: 2em;
+    width: calc(33% - 2em);
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.products > div img {
+    max-width: 175px;
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.products > div h3, .cart > div h3 {
+    font-weight: 800;
+}
+
+.cart > div {
+    border: 1px solid #ccc;
+    margin: 1em;
+    padding: 1.5em;
+    width: calc(33% - 2em);
+    text-align: center;
+}
+
+.checkout {
+    margin-bottom: 4em;
+}
+
+button {
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 0.5em 1em;
+    transition: 0.2s ease all;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.9em;
+    border-radius: 4px;
+}
+
+button.pay {
+    background: #f5f5f5;
+    vertical-align: middle;
+    padding: 0.6em 1.5em;
+    width: 100%;
+    margin-top: 1em;
+}
+
+button:hover {
+    background: rgb(93, 120, 118);
+    color: #fff;
+    cursor: pointer;
+}
+
+.received {
+    font-size: 1em;
+    padding: 0.6em;
+    border: 1px solid #ccc;
+    margin: 0.5em 0;
+    width: calc(100% - 2em);
+    text-align: center;
+    border-radius: 4px;
+}
+
+.cart-total, .pay-summary {
+    padding: 1em 0;
+    font-size: 1em;
+}
+
+.checkout h2 {
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+.checkout-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout-container form label {
+    font-weight: 600;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+.pay-summary h3 {
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.empty-btn {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
